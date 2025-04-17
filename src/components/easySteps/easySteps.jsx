@@ -1,6 +1,5 @@
 import './easySteps.css'
-import "@fontsource/poppins/200.css";
-import "@fontsource/philosopher/700.css"; // Bold
+
 
 
 
@@ -25,7 +24,7 @@ return(
                 </p>
             </div>
             <div className="process3">
-                <p className='number'>02.</p>
+                <p className='number'>03.</p>
                 <h2>Customized financial planning</h2>
                 <p className='process-detail'>This step is crucial for compliance, decision-making, 
                     and maintaining a transparent view of the client's status.

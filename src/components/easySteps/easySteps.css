@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 *{
     margin:0;
     padding:0;
@@ -49,12 +54,36 @@
     font-size: 16px;
     font-family: "Poppins";
     font-weight: 600;
+    padding:0;
 }
-@media (max-width:769px)
+@media (max-width:1024px)
 {
     .processes{
-        flex:grid;
+        display:grid;
         grid-template-columns:1fr 1fr;
     }
-
+}
+@media(max-width:667px){
+    .processes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:430px){
+    .process1,.process2,.process3,.process4{
+        align-items: self-start;
+        gap: 0px;
+    }
+    .processes{
+        padding-inline:5px;
+        gap:0px;
+    }
+    .process-detail{
+        margin-block: 20px;
+        text-align: left;
+    }
+    .processes h2{
+        margin-top:10px;
+    }
+    
 }
