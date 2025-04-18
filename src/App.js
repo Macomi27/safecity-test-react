@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/header/header.jsx";
 import EasySteps from "./components/easySteps/easySteps.jsx";
 
-// import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
 
       <EasySteps />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

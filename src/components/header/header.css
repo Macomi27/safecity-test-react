@@ -9,7 +9,7 @@ header{
 nav{
     background-color: white;
     width: 100%;
-    height: 20vh;
+    height: 18vh;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -22,15 +22,16 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
 }
 
 .logo{
-    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.logo-image{
+    width: 100px;
 }
 .logo img{
     width: 100%;
@@ -53,6 +54,15 @@ nav{
 
 .navlinks a:hover{
     color: rgb(65, 196, 106);
+    transition: all 0.3s ease-in-out;
+}
+
+.navlinks .home a{
+    color: rgb(65, 196, 106);
+}
+.navlinks .home a:hover{
+    color: rgb(104, 171, 124);
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-section{
