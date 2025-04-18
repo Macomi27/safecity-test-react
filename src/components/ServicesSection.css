@@ -1,0 +1,63 @@
+.services {
+    text-align: center;
+    padding: 40px;
+    background: #f3f5f6;
+    
+  }
+  
+  .services h5 {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card i {
+    font-size: 28px;
+    color: #2c7a7b;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 25px;
+    font-family: Poppins 400 normal;
+    font-weight: normal;
+  }
+  
+  .card p {
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #2c7a7b;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
