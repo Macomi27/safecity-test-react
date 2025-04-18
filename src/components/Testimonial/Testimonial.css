@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.testimonial-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: rgb(225, 227, 227);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-heading {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #333;
+    
+  }
+
+  .testimonial-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #000;
+    font-family: "Philosopher";
+  }
+  
+  .quote-mark{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+  }
+
+  .quote-mark img{
+    width: 100%;
+    height:100%;
+  }
+  .testimonial-text-container {
+    position: relative;
+    height: 280px; /* Increased to accommodate author info */
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .testimonial-text-animation {
+
+    padding: 20px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .testimonial-slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100%); /* Start from right */
+    transition: transform 0.8s ease, opacity 0.9s ease;
+    pointer-events: none;
+  }
+  
+  .testimonial-slide.active {
+    opacity: 1;
+    transform: translateX(0); /* Center position */
+    z-index: 2;
+  }
+  
+  .testimonial-slide.active ~ .testimonial-slide {
+    transform: translateX(100%); /* Keep upcoming slides to the right */
+  }
+  
+  .testimonial-slide:not(.active) {
+    transform: translateX(-100%); /* Move previous slides to the left */
+    transition: transform 0.8s ease, opacity 1s ease;
+  }
+  @keyframes fadeOutSlideOut {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%); /* Slide out to the left */
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOutSlideOut 0.5s ease-in-out forwards;
+  }
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto 30px;
+    color: #333;
+  }
+  
+  .testimonial-author {
+    margin-top: 20px;
+  }
+  
+  .testimonial-author h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .testimonial-author p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+  
+  .testimonial-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonial-dot.active {
+    background-color: #bbd6c5;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-title {
+      max-width: 1200px;
+      font-size: 36px;
+    }
+  
+    .testimonial-text {
+      font-size: 16px;
+    }
+  
+    .testimonial-text-container {
+      height: 320px; /* Adjust for mobile */
+    }
+  }
+  
