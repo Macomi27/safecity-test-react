@@ -1,13 +1,18 @@
 import React from "react";
 import logoImage from '../images/logo.png'
 import "./footer.css"
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/19.0.0/cjs/react.production.min.js" integrity="sha512-nU+Ng6Lv1UThPJ9vMtDIEfW0pNWLZQsRwh0cCl3WJHjReVWnxLEWSY/esU9/v1iBsfoe0Y71xwOcpoVrhNcU4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-flex-container">
-                <div className="footer-flex">
+                <div className="footer-flex1">
                     <div className="logo-footer">
                                     <div className="logo-footer-image">
                                         <img src={logoImage} alt="logo" />
@@ -18,26 +23,26 @@ const Footer = () => {
                                     </div>
                                 </div>
                 </div>
-                <div className="footer-flex">
-                    <div></div>
+                <div className="footer-flex2">
+                    <FontAwesomeIcon icon={faHome} className="home-icon" />
                     <div className="house-address">
                         <p>123 Main Street London, W1A </p>
                         <p>1AA United Kingdom</p>
                     </div>
 
                 </div>
-                <div className="footer-flex">
-                    <div>
-                        <div></div>
+                <div className="footer-flex3">
+                    <div className="envelope">
+                        <FontAwesomeIcon icon={faEnvelope} className="envelope-icon" />
                         <p>office@email.com</p>
                     </div>
-                    <div>
-                        <div></div>
-                        <p>office@email.com</p>
+                    <div className="phone">
+                        <FontAwesomeIcon icon={faPhone} className="phone-icon"/>
+                        <p>+00 000 000 000</p>
                     </div>
                 </div>
-                <div className="footer-flex">
-                <div></div>
+                <div className="footer-flex4">
+                    <FontAwesomeIcon icon={faClock} className="clock-icon"/>
                     <div className="house-address">
                         <p>Monday - Friday</p>
                         <p>8.00 - 16.00</p>
@@ -53,8 +58,8 @@ const Footer = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className="socials">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <FontAwesomeIcon icon={faFacebookF} className="fb-icon" />
+            <FontAwesomeIcon icon={faInstagram} className="insta-icon" />
             </div>
             </div>
         </footer>
