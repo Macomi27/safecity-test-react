@@ -11,7 +11,7 @@ const Economic = () => {
           alt="" 
           className="service-image"
         />
-        <div className="text-badge">ECONOMIC CONSULTANCY</div>
+        <div className="text-badge">Economic Consultancy</div>
       </div>
 
     

@@ -10,7 +10,7 @@ const Accounting = () => {
         alt="" 
         className="service-image"
       />
-      <div className="text-badge">Accounting</div>
+      <div className="text-badge">Accounting Services</div>
     </div>
 
   

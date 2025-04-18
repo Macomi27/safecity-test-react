@@ -11,7 +11,7 @@ const Tax = () => {
           alt="" 
           className="service-image"
         />
-        <div className="text-badge">Tax CONSULTANCY</div>
+        <div className="text-badge">Tax Consultancy</div>
       </div>
 
     
