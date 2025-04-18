@@ -4,7 +4,14 @@ import "./footer.css"
 const Footer = () => {
     return (
         <footer className="footer">
-        <h1>My footer</h1>
+            <div>
+                <div className="footer-grid"></div>
+                <div className="footer-grid"></div>
+                <div className="footer-grid"></div>
+                <div className="footer-grid"></div>-item
+            </div>
+            <hr />
+            <div className="footer-links"></div>
         </footer>
     );
 }
