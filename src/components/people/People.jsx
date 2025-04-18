@@ -15,7 +15,7 @@ const team = [
     description: "At the helm of our day-to-day operations is Harper, our dedicated Accounting Manager."
   },
   {
-    name: "Harper Perez",
+    name: "Abigail Anderson",
     title: "Chief accountant",
     image: "https://ondb1y.yourbrand.studio/files/dynamicContent/sites/ondb1y/images/en/webpage_25/m5p6l2pi/element_480/pexels-mikhail-nilov-8297121-6597d8e22e638.webp",
     description: "Her expertise in navigating regulatory landscapes and optimizing processes."

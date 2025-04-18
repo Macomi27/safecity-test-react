@@ -7,7 +7,6 @@ import People from "./components/people/People.jsx";
 function App() {
   return (
     <div className="App">
-      <h1>React app test</h1>
       <Header />
       <People />
       <Footer />
