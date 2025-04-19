@@ -68,3 +68,45 @@ margin-top: 30px;
     top:5%;
 
 }
+@media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .about-image {
+      margin-left: 0;
+    }
+  
+    .about-image img {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-image p {
+      position: relative;
+      top: 0;
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .About-Us h3 {
+      margin-left: 20px;
+    }
+  
+    .About-Us h1 {
+      font-size: 30px;
+      width: 100%;
+      margin-left: 20px;
+    }
+  
+    .About-Us p {
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
+  
