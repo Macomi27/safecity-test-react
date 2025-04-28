@@ -34,6 +34,38 @@ footer{
     width: 100%;
 }
 
+.footer-flex2, .footer-flex4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-flex3{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+.house-address{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.home-icon, .clock-icon, .envelope-icon, .phone-icon{
+    font-size: 40px;
+    color: rgb(65, 196, 106);
+}
+
+.envelope, .phone{
+    display: flex;
+    gap: 20px;
+    color: rgb(65, 196, 106);
+}
+
+
 .footer-hr{
     width: 100%;
     color: rgba(255, 255, 255, 0.322);
@@ -42,7 +74,7 @@ footer{
 
 .footer-links{
     display: flex;
-    gap: 40px;
+    gap: 80px;
     width: 90%;
     margin-inline: auto;
 }
@@ -52,6 +84,7 @@ footer{
     gap: 40px;
     list-style: none;
     padding-block: 20px;
+    align-items: center;
 }
 .footerlinks a{
     text-decoration: underline;
@@ -66,6 +99,24 @@ footer{
     color: rgb(65, 196, 106);
 }
 .footerlinks .home a:hover{
+    color: rgb(104, 171, 124);
+    transition: all 0.3s ease-in-out;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.fb-icon{
+    font-size: 20px;
+}
+.insta-icon{
+    font-size: 28px;
+}
+
+.fb-icon:hover, .insta-icon:hover{
     color: rgb(104, 171, 124);
     transition: all 0.3s ease-in-out;
 }
